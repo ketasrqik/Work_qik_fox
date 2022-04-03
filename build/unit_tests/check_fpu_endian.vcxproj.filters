@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_fpu_endian.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\unit_tests\checks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\clamav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\cclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\cname.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\regex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\regex2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7z.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Xz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\XzCrc64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\RotateDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Ppmd7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\LzmaDec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Ppmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Lzma2Dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Delta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\CpuArch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Bra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Bcj2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zCrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zBuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zAlloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_arena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_clam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_exec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\bignum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\bignum_fast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclammspack\mspack\mspack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamunrar_iface\unrar_iface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\dirent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\gettimeofday.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\libgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\net.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\resolv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\utf8_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\w32_errno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\w32_stat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\KETQIK\clamav-0.104.2\unit_tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\strlcpy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\regcomp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\regerror.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\regexec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\regfree.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zAlloc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zBuf.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zBuf2.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zCrc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zCrcOpt.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zDec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zFile.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zIn.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zStream.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Bcj2.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Bra.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Bra86.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\BraIA64.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\CpuArch.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Delta.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Lzma2Dec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\LzmaDec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Ppmd7.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Ppmd7Dec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Xz.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\XzCrc64.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\XzDec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\XzIn.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_compiler.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_exec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_hash.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_parser.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_arena.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_grammar.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_lexer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_add.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_add_d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_addmod.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_cmp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_cmp_d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_cmp_mag.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sub.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sub_d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_submod.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\s_fp_add.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\s_fp_sub.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_radix_size.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_read_radix.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_read_signed_bin.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_read_unsigned_bin.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_reverse.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_s_rmap.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_signed_bin_size.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_to_signed_bin.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_to_unsigned_bin.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_toradix.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_toradix_n.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_unsigned_bin_size.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_cnt_lsb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_count_bits.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_div_2.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_div_2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_lshd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mod_2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_rshd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_div.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_div_d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mod.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mod_d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_2expt.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_exptmod.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_ident.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_set.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_montgomery_calc_normalization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_montgomery_reduce.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_montgomery_setup.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_2.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_12.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_17.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_20.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_24.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_28.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_3.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_32.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_4.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_48.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_6.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_64.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_7.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_8.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_9.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_small_set.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mulmod.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_invmod.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_12.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_17.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_20.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_24.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_28.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_3.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_32.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_4.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_48.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_6.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_64.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_7.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_8.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_9.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_generic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_small_set.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqrmod.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\bytecode_runtime.dir\$(Configuration)\bytecode_nojit.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{72A1D0CF-8184-3529-B66A-38C79E0A4D92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{01D6F431-E439-3DD6-B6FC-4435DBADC931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{698A138C-B436-3E16-B813-08AB2C9BA41B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

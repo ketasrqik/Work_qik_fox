@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\KETQIK\clamav-0.104.2\build\CMakeFiles\f798214f88f9f1ec169ee460a63df89f\clam.exe.mbox.base64.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\KETQIK\clamav-0.104.2\build\CMakeFiles\c2feee28b39134bf42a9296e053cee18\tgt_clam.exe.mbox.base64.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\KETQIK\clamav-0.104.2\unit_tests\input\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\CMakeFiles\tgt_clam.exe.mbox.base64" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{87CE72E0-EC79-34BC-A6C8-B128E843F9A2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EAA6CE23-E1CA-3154-81E4-B2CE61E0F4EB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>test_install</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\KETQIK\clamav-0.104.2\build\CMakeFiles\dc9ef86c58d603b58ac3ee1339905eb6\test_install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D CMAKE_INSTALL_CONFIG_NAME:string=Debug -D CMAKE_INSTALL_PREFIX:string=D:/KETQIK/clamav-0.104.2/build/unit_tests/Debug -P D:/KETQIK/clamav-0.104.2/build/cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\Debug\check_clamav.exe;D:\KETQIK\clamav-0.104.2\build\unit_tests\Debug\check_clamd.exe;D:\KETQIK\clamav-0.104.2\build\unit_tests\Debug\check_fpu_endian.exe;D:\KETQIK\clamav-0.104.2\build\libclamav\Debug\libclamav.dll;D:\KETQIK\clamav-0.104.2\build\libfreshclam\Debug\libfreshclam.dll;D:\KETQIK\clamav-0.104.2\build\libclamunrar\Debug\libclamunrar.dll;D:\KETQIK\clamav-0.104.2\build\libclamunrar_iface\Debug\libclamunrar_iface.dll;D:\KETQIK\clamav-0.104.2\build\libclammspack\Debug\libclammspack.dll;D:\KETQIK\clamav-0.104.2\build\clambc\Debug\clambc.exe;D:\KETQIK\clamav-0.104.2\build\clamd\Debug\clamd.exe;D:\KETQIK\clamav-0.104.2\build\clamdscan\Debug\clamdscan.exe;D:\KETQIK\clamav-0.104.2\build\clamdtop\Debug\clamdtop.exe;D:\KETQIK\clamav-0.104.2\build\clamscan\Debug\clamscan.exe;D:\KETQIK\clamav-0.104.2\build\clamsubmit\Debug\clamsubmit.exe;D:\KETQIK\clamav-0.104.2\build\clamconf\Debug\clamconf.exe;D:\KETQIK\clamav-0.104.2\build\freshclam\Debug\freshclam.exe;D:\KETQIK\clamav-0.104.2\build\sigtool\Debug\sigtool.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\test_install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D CMAKE_INSTALL_CONFIG_NAME:string=Release -D CMAKE_INSTALL_PREFIX:string=D:/KETQIK/clamav-0.104.2/build/unit_tests/Release -P D:/KETQIK/clamav-0.104.2/build/cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\Release\check_clamav.exe;D:\KETQIK\clamav-0.104.2\build\unit_tests\Release\check_clamd.exe;D:\KETQIK\clamav-0.104.2\build\unit_tests\Release\check_fpu_endian.exe;D:\KETQIK\clamav-0.104.2\build\libclamav\Release\libclamav.dll;D:\KETQIK\clamav-0.104.2\build\libfreshclam\Release\libfreshclam.dll;D:\KETQIK\clamav-0.104.2\build\libclamunrar\Release\libclamunrar.dll;D:\KETQIK\clamav-0.104.2\build\libclamunrar_iface\Release\libclamunrar_iface.dll;D:\KETQIK\clamav-0.104.2\build\libclammspack\Release\libclammspack.dll;D:\KETQIK\clamav-0.104.2\build\clambc\Release\clambc.exe;D:\KETQIK\clamav-0.104.2\build\clamd\Release\clamd.exe;D:\KETQIK\clamav-0.104.2\build\clamdscan\Release\clamdscan.exe;D:\KETQIK\clamav-0.104.2\build\clamdtop\Release\clamdtop.exe;D:\KETQIK\clamav-0.104.2\build\clamscan\Release\clamscan.exe;D:\KETQIK\clamav-0.104.2\build\clamsubmit\Release\clamsubmit.exe;D:\KETQIK\clamav-0.104.2\build\clamconf\Release\clamconf.exe;D:\KETQIK\clamav-0.104.2\build\freshclam\Release\freshclam.exe;D:\KETQIK\clamav-0.104.2\build\sigtool\Release\sigtool.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\test_install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D CMAKE_INSTALL_CONFIG_NAME:string=MinSizeRel -D CMAKE_INSTALL_PREFIX:string=D:/KETQIK/clamav-0.104.2/build/unit_tests/MinSizeRel -P D:/KETQIK/clamav-0.104.2/build/cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\MinSizeRel\check_clamav.exe;D:\KETQIK\clamav-0.104.2\build\unit_tests\MinSizeRel\check_clamd.exe;D:\KETQIK\clamav-0.104.2\build\unit_tests\MinSizeRel\check_fpu_endian.exe;D:\KETQIK\clamav-0.104.2\build\libclamav\MinSizeRel\libclamav.dll;D:\KETQIK\clamav-0.104.2\build\libfreshclam\MinSizeRel\libfreshclam.dll;D:\KETQIK\clamav-0.104.2\build\libclamunrar\MinSizeRel\libclamunrar.dll;D:\KETQIK\clamav-0.104.2\build\libclamunrar_iface\MinSizeRel\libclamunrar_iface.dll;D:\KETQIK\clamav-0.104.2\build\libclammspack\MinSizeRel\libclammspack.dll;D:\KETQIK\clamav-0.104.2\build\clambc\MinSizeRel\clambc.exe;D:\KETQIK\clamav-0.104.2\build\clamd\MinSizeRel\clamd.exe;D:\KETQIK\clamav-0.104.2\build\clamdscan\MinSizeRel\clamdscan.exe;D:\KETQIK\clamav-0.104.2\build\clamdtop\MinSizeRel\clamdtop.exe;D:\KETQIK\clamav-0.104.2\build\clamscan\MinSizeRel\clamscan.exe;D:\KETQIK\clamav-0.104.2\build\clamsubmit\MinSizeRel\clamsubmit.exe;D:\KETQIK\clamav-0.104.2\build\clamconf\MinSizeRel\clamconf.exe;D:\KETQIK\clamav-0.104.2\build\freshclam\MinSizeRel\freshclam.exe;D:\KETQIK\clamav-0.104.2\build\sigtool\MinSizeRel\sigtool.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\test_install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D CMAKE_INSTALL_CONFIG_NAME:string=RelWithDebInfo -D CMAKE_INSTALL_PREFIX:string=D:/KETQIK/clamav-0.104.2/build/unit_tests/RelWithDebInfo -P D:/KETQIK/clamav-0.104.2/build/cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\RelWithDebInfo\check_clamav.exe;D:\KETQIK\clamav-0.104.2\build\unit_tests\RelWithDebInfo\check_clamd.exe;D:\KETQIK\clamav-0.104.2\build\unit_tests\RelWithDebInfo\check_fpu_endian.exe;D:\KETQIK\clamav-0.104.2\build\libclamav\RelWithDebInfo\libclamav.dll;D:\KETQIK\clamav-0.104.2\build\libfreshclam\RelWithDebInfo\libfreshclam.dll;D:\KETQIK\clamav-0.104.2\build\libclamunrar\RelWithDebInfo\libclamunrar.dll;D:\KETQIK\clamav-0.104.2\build\libclamunrar_iface\RelWithDebInfo\libclamunrar_iface.dll;D:\KETQIK\clamav-0.104.2\build\libclammspack\RelWithDebInfo\libclammspack.dll;D:\KETQIK\clamav-0.104.2\build\clambc\RelWithDebInfo\clambc.exe;D:\KETQIK\clamav-0.104.2\build\clamd\RelWithDebInfo\clamd.exe;D:\KETQIK\clamav-0.104.2\build\clamdscan\RelWithDebInfo\clamdscan.exe;D:\KETQIK\clamav-0.104.2\build\clamdtop\RelWithDebInfo\clamdtop.exe;D:\KETQIK\clamav-0.104.2\build\clamscan\RelWithDebInfo\clamscan.exe;D:\KETQIK\clamav-0.104.2\build\clamsubmit\RelWithDebInfo\clamsubmit.exe;D:\KETQIK\clamav-0.104.2\build\clamconf\RelWithDebInfo\clamconf.exe;D:\KETQIK\clamav-0.104.2\build\freshclam\RelWithDebInfo\freshclam.exe;D:\KETQIK\clamav-0.104.2\build\sigtool\RelWithDebInfo\sigtool.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\test_install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\KETQIK\clamav-0.104.2\unit_tests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/unit_tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/unit_tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/unit_tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/unit_tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/unit_tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/unit_tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/unit_tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/unit_tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\test_install">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\ZERO_CHECK.vcxproj">
+      <Project>{DC36889F-590F-3FF2-B908-C8F64F47D0A8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\check_clamav.vcxproj">
+      <Project>{1B10D527-2ABF-39FA-8AB4-2C5D8811F130}</Project>
+      <Name>check_clamav</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\check_clamd.vcxproj">
+      <Project>{91EFB749-C71B-3F52-8852-BC802B0CB26F}</Project>
+      <Name>check_clamd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\check_fpu_endian.vcxproj">
+      <Project>{F78F7E5E-04B4-3274-AFD0-13F63A29C17B}</Project>
+      <Name>check_fpu_endian</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\clamav.vcxproj">
+      <Project>{D1C95270-8A61-337F-9B17-DC509F3F2FA8}</Project>
+      <Name>clamav</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clambc\clambc.vcxproj">
+      <Project>{76ABF129-2C80-3B21-8EA5-AD5E49B2A606}</Project>
+      <Name>clambc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamconf\clamconf.vcxproj">
+      <Project>{C790BE2B-E6A8-344E-B42C-DB454347CD86}</Project>
+      <Name>clamconf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamd\clamd.vcxproj">
+      <Project>{AB35AD90-ABCF-3510-939C-959DEA37ACFB}</Project>
+      <Name>clamd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamdscan\clamdscan.vcxproj">
+      <Project>{D1566AEE-1C5C-3E87-827E-76FAF482766D}</Project>
+      <Name>clamdscan</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamdtop\clamdtop.vcxproj">
+      <Project>{8F2B258C-DB10-31FD-8514-A0ABACF85868}</Project>
+      <Name>clamdtop</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclammspack\clammspack.vcxproj">
+      <Project>{B67B063A-A32C-35EC-AC6A-CB9D3D58065D}</Project>
+      <Name>clammspack</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamscan\clamscan.vcxproj">
+      <Project>{27E12440-7B77-3B52-B787-C85BCCF5EFE3}</Project>
+      <Name>clamscan</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamsubmit\clamsubmit.vcxproj">
+      <Project>{EFED844A-D273-31D3-A9FE-2B749E1F4D02}</Project>
+      <Name>clamsubmit</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamunrar\clamunrar.vcxproj">
+      <Project>{C83D8B6B-C908-3576-A090-A66962DE3A87}</Project>
+      <Name>clamunrar</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamunrar_iface\clamunrar_iface.vcxproj">
+      <Project>{212FD853-83B6-3CB2-932B-1B63AD28D09E}</Project>
+      <Name>clamunrar_iface</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libfreshclam\freshclam.vcxproj">
+      <Project>{291A457E-2D07-378F-B7F0-1E1483023D4B}</Project>
+      <Name>freshclam</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\freshclam\freshclam-bin.vcxproj">
+      <Project>{0A3EFBC1-C4C6-3DE3-A59D-65C856149A65}</Project>
+      <Name>freshclam-bin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\sigtool\sigtool.vcxproj">
+      <Project>{08DC1F5D-6C13-3E30-87E7-DDD2D442C041}</Project>
+      <Name>sigtool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

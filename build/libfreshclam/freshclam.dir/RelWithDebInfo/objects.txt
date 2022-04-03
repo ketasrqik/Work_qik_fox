@@ -1,0 +1,4 @@
+D:/KETQIK/clamav-0.104.2/build/libfreshclam/freshclam.dir/RelWithDebInfo/libfreshclam.obj
+D:/KETQIK/clamav-0.104.2/build/libfreshclam/freshclam.dir/RelWithDebInfo/libfreshclam_internal.obj
+D:/KETQIK/clamav-0.104.2/build/libfreshclam/freshclam.dir/RelWithDebInfo/dns.obj
+D:/KETQIK/clamav-0.104.2/build/libfreshclam/freshclam.dir/RelWithDebInfo/libfreshclam_main.obj

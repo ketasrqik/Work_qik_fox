@@ -1,0 +1,38 @@
+EXPORTS 
+	g_bCompressLocalDatabase 	 DATA
+	g_cb_download_complete 	 DATA
+	g_connectTimeout 	 DATA
+	g_databaseDirectory 	 DATA
+	g_freshclamDat 	 DATA
+	g_localIP 	 DATA
+	g_maxAttempts 	 DATA
+	g_proxyPassword 	 DATA
+	g_proxyPort 	 DATA
+	g_proxyServer 	 DATA
+	g_proxyUsername 	 DATA
+	g_requestTimeout 	 DATA
+	g_tempDirectory 	 DATA
+	g_userAgent 	 DATA
+	DllMain
+	__local_stdio_printf_options
+	dnsquery
+	fc_cleanup
+	fc_dns_query_update_info
+	fc_download_url_database
+	fc_download_url_databases
+	fc_initialize
+	fc_prune_database_directory
+	fc_set_fccb_download_complete
+	fc_strerror
+	fc_test_database
+	fc_update_database
+	fc_update_databases
+	fprintf
+	load_freshclam_dat
+	new_freshclam_dat
+	printf
+	save_freshclam_dat
+	snprintf
+	updatecustomdb
+	updatedb
+	version_string_compare

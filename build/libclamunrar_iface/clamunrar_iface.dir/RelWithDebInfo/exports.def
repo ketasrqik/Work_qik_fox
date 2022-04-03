@@ -1,0 +1,10 @@
+EXPORTS 
+	?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 	 DATA
+	unrar_debug 	 DATA
+	CallbackProc
+	__local_stdio_printf_options
+	libclamunrar_iface_LTX_unrar_close
+	libclamunrar_iface_LTX_unrar_extract_file
+	libclamunrar_iface_LTX_unrar_open
+	libclamunrar_iface_LTX_unrar_peek_file_header
+	libclamunrar_iface_LTX_unrar_skip_file

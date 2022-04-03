@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B10D527-2ABF-39FA-8AB4-2C5D8811F130}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>check_clamav</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">check_clamav.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">check_clamav</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">check_clamav.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">check_clamav</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">check_clamav.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">check_clamav</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">check_clamav.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">check_clamav</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OBJDIR="D:\\KETQIK\\clamav-0.104.2\\build\\unit_tests";SRCDIR="D:\\KETQIK\\clamav-0.104.2\\unit_tests";HAVE_CONFIG_H;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_UNRAR;THIS_IS_LIBCLAMAV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OBJDIR=\"D:\\KETQIK\\clamav-0.104.2\\build\\unit_tests\";SRCDIR=\"D:\\KETQIK\\clamav-0.104.2\\unit_tests\";HAVE_CONFIG_H;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_UNRAR;THIS_IS_LIBCLAMAV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/dev/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/KETQIK/clamav-0.104.2/build/unit_tests/Debug/check_clamav.exe -installedDir C:/dev/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/KETQIK/clamav-0.104.2/unit_tests/input/clamav.hdb D:/KETQIK/clamav-0.104.2/build/unit_tests/input/.
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\dev\vcpkg\installed\x64-windows\debug\lib\check.lib;..\libclamav\Debug\clamav.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\json-c.lib;..\libclammspack\Debug\clammspack.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libssl.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libcrypto.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\zlibd.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\bz2d.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\pcre2-8d.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libxml2.lib;..\win32\compat\Debug\libwin32_compat.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\pthreadVC3d.lib;dnsapi.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/KETQIK/clamav-0.104.2/build/unit_tests/Debug/check_clamav.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/KETQIK/clamav-0.104.2/build/unit_tests/Debug/check_clamav.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OBJDIR="D:\\KETQIK\\clamav-0.104.2\\build\\unit_tests";SRCDIR="D:\\KETQIK\\clamav-0.104.2\\unit_tests";HAVE_CONFIG_H;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_UNRAR;THIS_IS_LIBCLAMAV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OBJDIR=\"D:\\KETQIK\\clamav-0.104.2\\build\\unit_tests\";SRCDIR=\"D:\\KETQIK\\clamav-0.104.2\\unit_tests\";HAVE_CONFIG_H;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_UNRAR;THIS_IS_LIBCLAMAV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/dev/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/KETQIK/clamav-0.104.2/build/unit_tests/Release/check_clamav.exe -installedDir C:/dev/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/KETQIK/clamav-0.104.2/unit_tests/input/clamav.hdb D:/KETQIK/clamav-0.104.2/build/unit_tests/input/.
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\dev\vcpkg\installed\x64-windows\debug\lib\check.lib;..\libclamav\Release\clamav.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\json-c.lib;..\libclammspack\Release\clammspack.lib;C:\dev\vcpkg\installed\x64-windows\lib\libssl.lib;C:\dev\vcpkg\installed\x64-windows\lib\libcrypto.lib;C:\dev\vcpkg\installed\x64-windows\lib\zlib.lib;C:\dev\vcpkg\installed\x64-windows\lib\bz2.lib;C:\dev\vcpkg\installed\x64-windows\lib\pcre2-8.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libxml2.lib;..\win32\compat\Release\libwin32_compat.lib;C:\dev\vcpkg\installed\x64-windows\lib\pthreadVC3.lib;dnsapi.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/KETQIK/clamav-0.104.2/build/unit_tests/Release/check_clamav.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/KETQIK/clamav-0.104.2/build/unit_tests/Release/check_clamav.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OBJDIR="D:\\KETQIK\\clamav-0.104.2\\build\\unit_tests";SRCDIR="D:\\KETQIK\\clamav-0.104.2\\unit_tests";HAVE_CONFIG_H;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_UNRAR;THIS_IS_LIBCLAMAV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OBJDIR=\"D:\\KETQIK\\clamav-0.104.2\\build\\unit_tests\";SRCDIR=\"D:\\KETQIK\\clamav-0.104.2\\unit_tests\";HAVE_CONFIG_H;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_UNRAR;THIS_IS_LIBCLAMAV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/dev/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/KETQIK/clamav-0.104.2/build/unit_tests/MinSizeRel/check_clamav.exe -installedDir C:/dev/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/KETQIK/clamav-0.104.2/unit_tests/input/clamav.hdb D:/KETQIK/clamav-0.104.2/build/unit_tests/input/.
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\dev\vcpkg\installed\x64-windows\debug\lib\check.lib;..\libclamav\MinSizeRel\clamav.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\json-c.lib;..\libclammspack\MinSizeRel\clammspack.lib;C:\dev\vcpkg\installed\x64-windows\lib\libssl.lib;C:\dev\vcpkg\installed\x64-windows\lib\libcrypto.lib;C:\dev\vcpkg\installed\x64-windows\lib\zlib.lib;C:\dev\vcpkg\installed\x64-windows\lib\bz2.lib;C:\dev\vcpkg\installed\x64-windows\lib\pcre2-8.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libxml2.lib;..\win32\compat\MinSizeRel\libwin32_compat.lib;C:\dev\vcpkg\installed\x64-windows\lib\pthreadVC3.lib;dnsapi.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/KETQIK/clamav-0.104.2/build/unit_tests/MinSizeRel/check_clamav.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/KETQIK/clamav-0.104.2/build/unit_tests/MinSizeRel/check_clamav.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OBJDIR="D:\\KETQIK\\clamav-0.104.2\\build\\unit_tests";SRCDIR="D:\\KETQIK\\clamav-0.104.2\\unit_tests";HAVE_CONFIG_H;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_UNRAR;THIS_IS_LIBCLAMAV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OBJDIR=\"D:\\KETQIK\\clamav-0.104.2\\build\\unit_tests\";SRCDIR=\"D:\\KETQIK\\clamav-0.104.2\\unit_tests\";HAVE_CONFIG_H;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_UNRAR;THIS_IS_LIBCLAMAV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/dev/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/KETQIK/clamav-0.104.2/build/unit_tests/RelWithDebInfo/check_clamav.exe -installedDir C:/dev/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/KETQIK/clamav-0.104.2/unit_tests/input/clamav.hdb D:/KETQIK/clamav-0.104.2/build/unit_tests/input/.
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\dev\vcpkg\installed\x64-windows\debug\lib\check.lib;..\libclamav\RelWithDebInfo\clamav.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\json-c.lib;..\libclammspack\RelWithDebInfo\clammspack.lib;C:\dev\vcpkg\installed\x64-windows\lib\libssl.lib;C:\dev\vcpkg\installed\x64-windows\lib\libcrypto.lib;C:\dev\vcpkg\installed\x64-windows\lib\zlib.lib;C:\dev\vcpkg\installed\x64-windows\lib\bz2.lib;C:\dev\vcpkg\installed\x64-windows\lib\pcre2-8.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libxml2.lib;..\win32\compat\RelWithDebInfo\libwin32_compat.lib;C:\dev\vcpkg\installed\x64-windows\lib\pthreadVC3.lib;dnsapi.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/KETQIK/clamav-0.104.2/build/unit_tests/RelWithDebInfo/check_clamav.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/KETQIK/clamav-0.104.2/build/unit_tests/RelWithDebInfo/check_clamav.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\KETQIK\clamav-0.104.2\unit_tests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/unit_tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/unit_tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/unit_tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/unit_tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/unit_tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/unit_tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/unit_tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/unit_tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\KETQIK\clamav-0.104.2\build\unit_tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\unit_tests\checks.h" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_bytecode.c" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_clamav.c" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_disasm.c" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_htmlnorm.c" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_jsnorm.c" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_matchers.c" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_regex.c" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_str.c" />
+    <ClCompile Include="D:\KETQIK\clamav-0.104.2\unit_tests\check_uniq.c" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\clamav.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\cclass.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\cname.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\regex.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\regex2.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\regex\utils.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7z.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Xz.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Alloc.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zFile.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\XzCrc64.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\RotateDefs.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Types.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Ppmd7.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\LzmaDec.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Ppmd.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Lzma2Dec.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Delta.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\CpuArch.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Bra.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\Bcj2.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zVersion.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zCrc.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zBuf.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\7z\7zAlloc.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_arena.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_compiler.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_clam.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_hash.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_exec.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\yara_parser.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\bignum.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamav\bignum_fast.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclammspack\mspack\mspack.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\libclamunrar_iface\unrar_iface.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\dirent.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\gettimeofday.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\libgen.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\net.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\random.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\resolv.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\utf8_util.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\w32_errno.h" />
+    <ClInclude Include="D:\KETQIK\clamav-0.104.2\win32\compat\w32_stat.h" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\strlcpy.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\regcomp.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\regerror.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\regexec.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.dir\$(Configuration)\regfree.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zAlloc.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zBuf.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zBuf2.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zCrc.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zCrcOpt.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zDec.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zFile.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zIn.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\7zStream.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Bcj2.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Bra.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Bra86.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\BraIA64.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\CpuArch.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Delta.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Lzma2Dec.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\LzmaDec.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Ppmd7.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Ppmd7Dec.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\Xz.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\XzCrc64.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\XzDec.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.dir\$(Configuration)\XzIn.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_compiler.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_exec.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_hash.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_parser.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_arena.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_grammar.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.dir\$(Configuration)\yara_lexer.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_add.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_add_d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_addmod.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_cmp.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_cmp_d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_cmp_mag.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sub.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sub_d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_submod.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\s_fp_add.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\s_fp_sub.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_radix_size.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_read_radix.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_read_signed_bin.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_read_unsigned_bin.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_reverse.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_s_rmap.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_signed_bin_size.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_to_signed_bin.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_to_unsigned_bin.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_toradix.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_toradix_n.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_unsigned_bin_size.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_cnt_lsb.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_count_bits.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_div_2.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_div_2d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_lshd.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mod_2d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_rshd.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_div.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_div_d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mod.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mod_d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_2expt.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_exptmod.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_ident.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_set.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_montgomery_calc_normalization.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_montgomery_reduce.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_montgomery_setup.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_2.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_2d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_12.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_17.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_20.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_24.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_28.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_3.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_32.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_4.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_48.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_6.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_64.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_7.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_8.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_9.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_comba_small_set.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mul_d.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_mulmod.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_invmod.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_12.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_17.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_20.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_24.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_28.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_3.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_32.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_4.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_48.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_6.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_64.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_7.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_8.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_9.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_generic.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqr_comba_small_set.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\$(Configuration)\fp_sqrmod.obj" />
+    <Object Include="D:\KETQIK\clamav-0.104.2\build\libclamav\bytecode_runtime.dir\$(Configuration)\bytecode_nojit.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\ZERO_CHECK.vcxproj">
+      <Project>{DC36889F-590F-3FF2-B908-C8F64F47D0A8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\bytecode_runtime.vcxproj">
+      <Project>{5D5BE9E8-1EF4-38BA-B2E5-5CA0A0B6ADCA}</Project>
+      <Name>bytecode_runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\clamav.vcxproj">
+      <Project>{D1C95270-8A61-337F-9B17-DC509F3F2FA8}</Project>
+      <Name>clamav</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclammspack\clammspack.vcxproj">
+      <Project>{B67B063A-A32C-35EC-AC6A-CB9D3D58065D}</Project>
+      <Name>clammspack</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.vcxproj">
+      <Project>{E168AEDC-2C46-354F-BAD4-052DC5CDF6BC}</Project>
+      <Name>lzma_sdk</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.vcxproj">
+      <Project>{4A243B09-C311-3B03-95E3-8AAE8FF23EB5}</Project>
+      <Name>regex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.vcxproj">
+      <Project>{1F950838-261C-317C-9DF7-754BDD6356AA}</Project>
+      <Name>tomsfastmath</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\win32\compat\win32_compat.vcxproj">
+      <Project>{687487EB-1FCC-351E-89D1-7ECCC28DFE93}</Project>
+      <Name>win32_compat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\win32\compat\win32_compat_obj.vcxproj">
+      <Project>{50AE331D-C34E-3E5A-95EF-0454C6C574E6}</Project>
+      <Name>win32_compat_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.vcxproj">
+      <Project>{FE75F373-96DA-3A79-830C-0423F53C6268}</Project>
+      <Name>yara</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

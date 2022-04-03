@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{65EEA8DE-AAE9-3258-9D40-69B973580850}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\KETQIK\clamav-0.104.2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckForPthreads.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.22\Modules\FindBZip2.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.22\Templates\CPackConfig.cmake.in;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\libxml2\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\KETQIK\clamav-0.104.2\CMakeOptions.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_INT_P.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c;D:\KETQIK\clamav-0.104.2\clamav-config.h.cmake.in;D:\KETQIK\clamav-0.104.2\clamav-types.h.in;D:\KETQIK\clamav-0.104.2\clamav-version.h.in;D:\KETQIK\clamav-0.104.2\cmake\CheckFDPassing.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFTS.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFileOffsetBits.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFmapFeatures.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckSignedRightShift.c;D:\KETQIK\clamav-0.104.2\cmake\CheckSignedRightShift.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckStructPacking.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckStructPacking_PRAGMA_PACK.c;D:\KETQIK\clamav-0.104.2\cmake\CheckUnamePosix.c;D:\KETQIK\clamav-0.104.2\cmake\CheckUnamePosix.cmake;D:\KETQIK\clamav-0.104.2\cmake\ColourMessage.cmake;D:\KETQIK\clamav-0.104.2\cmake\ExtractValidFlags.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindCURSES.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindJSONC.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindLibcheck.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindPCRE2.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindPthreadW32.cmake;D:\KETQIK\clamav-0.104.2\cmake\TestInline.c;D:\KETQIK\clamav-0.104.2\cmake\TestInline.cmake;D:\KETQIK\clamav-0.104.2\cmake\Version.cmake;D:\KETQIK\clamav-0.104.2\platform.h.in;D:\KETQIK\clamav-0.104.2\target.h.cmake.in;D:\KETQIK\clamav-0.104.2\win32\res\common.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\KETQIK\clamav-0.104.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckForPthreads.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.22\Modules\FindBZip2.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.22\Templates\CPackConfig.cmake.in;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\libxml2\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\KETQIK\clamav-0.104.2\CMakeOptions.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_INT_P.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c;D:\KETQIK\clamav-0.104.2\clamav-config.h.cmake.in;D:\KETQIK\clamav-0.104.2\clamav-types.h.in;D:\KETQIK\clamav-0.104.2\clamav-version.h.in;D:\KETQIK\clamav-0.104.2\cmake\CheckFDPassing.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFTS.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFileOffsetBits.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFmapFeatures.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckSignedRightShift.c;D:\KETQIK\clamav-0.104.2\cmake\CheckSignedRightShift.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckStructPacking.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckStructPacking_PRAGMA_PACK.c;D:\KETQIK\clamav-0.104.2\cmake\CheckUnamePosix.c;D:\KETQIK\clamav-0.104.2\cmake\CheckUnamePosix.cmake;D:\KETQIK\clamav-0.104.2\cmake\ColourMessage.cmake;D:\KETQIK\clamav-0.104.2\cmake\ExtractValidFlags.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindCURSES.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindJSONC.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindLibcheck.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindPCRE2.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindPthreadW32.cmake;D:\KETQIK\clamav-0.104.2\cmake\TestInline.c;D:\KETQIK\clamav-0.104.2\cmake\TestInline.cmake;D:\KETQIK\clamav-0.104.2\cmake\Version.cmake;D:\KETQIK\clamav-0.104.2\platform.h.in;D:\KETQIK\clamav-0.104.2\target.h.cmake.in;D:\KETQIK\clamav-0.104.2\win32\res\common.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\KETQIK\clamav-0.104.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckForPthreads.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.22\Modules\FindBZip2.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.22\Templates\CPackConfig.cmake.in;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\libxml2\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\KETQIK\clamav-0.104.2\CMakeOptions.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_INT_P.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c;D:\KETQIK\clamav-0.104.2\clamav-config.h.cmake.in;D:\KETQIK\clamav-0.104.2\clamav-types.h.in;D:\KETQIK\clamav-0.104.2\clamav-version.h.in;D:\KETQIK\clamav-0.104.2\cmake\CheckFDPassing.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFTS.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFileOffsetBits.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFmapFeatures.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckSignedRightShift.c;D:\KETQIK\clamav-0.104.2\cmake\CheckSignedRightShift.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckStructPacking.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckStructPacking_PRAGMA_PACK.c;D:\KETQIK\clamav-0.104.2\cmake\CheckUnamePosix.c;D:\KETQIK\clamav-0.104.2\cmake\CheckUnamePosix.cmake;D:\KETQIK\clamav-0.104.2\cmake\ColourMessage.cmake;D:\KETQIK\clamav-0.104.2\cmake\ExtractValidFlags.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindCURSES.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindJSONC.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindLibcheck.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindPCRE2.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindPthreadW32.cmake;D:\KETQIK\clamav-0.104.2\cmake\TestInline.c;D:\KETQIK\clamav-0.104.2\cmake\TestInline.cmake;D:\KETQIK\clamav-0.104.2\cmake\Version.cmake;D:\KETQIK\clamav-0.104.2\platform.h.in;D:\KETQIK\clamav-0.104.2\target.h.cmake.in;D:\KETQIK\clamav-0.104.2\win32\res\common.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\KETQIK\clamav-0.104.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/KETQIK/clamav-0.104.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/KETQIK/clamav-0.104.2 -BD:/KETQIK/clamav-0.104.2/build --check-stamp-file D:/KETQIK/clamav-0.104.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckForPthreads.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.22\Modules\FindBZip2.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.22\Templates\CPackConfig.cmake.in;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;C:\dev\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\libxml2\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\KETQIK\clamav-0.104.2\CMakeOptions.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_INT_P.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c;D:\KETQIK\clamav-0.104.2\build\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c;D:\KETQIK\clamav-0.104.2\clamav-config.h.cmake.in;D:\KETQIK\clamav-0.104.2\clamav-types.h.in;D:\KETQIK\clamav-0.104.2\clamav-version.h.in;D:\KETQIK\clamav-0.104.2\cmake\CheckFDPassing.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFTS.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFileOffsetBits.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckFmapFeatures.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckSignedRightShift.c;D:\KETQIK\clamav-0.104.2\cmake\CheckSignedRightShift.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckStructPacking.cmake;D:\KETQIK\clamav-0.104.2\cmake\CheckStructPacking_PRAGMA_PACK.c;D:\KETQIK\clamav-0.104.2\cmake\CheckUnamePosix.c;D:\KETQIK\clamav-0.104.2\cmake\CheckUnamePosix.cmake;D:\KETQIK\clamav-0.104.2\cmake\ColourMessage.cmake;D:\KETQIK\clamav-0.104.2\cmake\ExtractValidFlags.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindCURSES.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindJSONC.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindLibcheck.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindPCRE2.cmake;D:\KETQIK\clamav-0.104.2\cmake\FindPthreadW32.cmake;D:\KETQIK\clamav-0.104.2\cmake\TestInline.c;D:\KETQIK\clamav-0.104.2\cmake\TestInline.cmake;D:\KETQIK\clamav-0.104.2\cmake\Version.cmake;D:\KETQIK\clamav-0.104.2\platform.h.in;D:\KETQIK\clamav-0.104.2\target.h.cmake.in;D:\KETQIK\clamav-0.104.2\win32\res\common.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\KETQIK\clamav-0.104.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\ZERO_CHECK.vcxproj">
+      <Project>{DC36889F-590F-3FF2-B908-C8F64F47D0A8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\bytecode_runtime.vcxproj">
+      <Project>{5D5BE9E8-1EF4-38BA-B2E5-5CA0A0B6ADCA}</Project>
+      <Name>bytecode_runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\check_clamav.vcxproj">
+      <Project>{1B10D527-2ABF-39FA-8AB4-2C5D8811F130}</Project>
+      <Name>check_clamav</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\check_clamd.vcxproj">
+      <Project>{91EFB749-C71B-3F52-8852-BC802B0CB26F}</Project>
+      <Name>check_clamd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\check_fpu_endian.vcxproj">
+      <Project>{F78F7E5E-04B4-3274-AFD0-13F63A29C17B}</Project>
+      <Name>check_fpu_endian</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\clamav.vcxproj">
+      <Project>{D1C95270-8A61-337F-9B17-DC509F3F2FA8}</Project>
+      <Name>clamav</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clambc\clambc.vcxproj">
+      <Project>{76ABF129-2C80-3B21-8EA5-AD5E49B2A606}</Project>
+      <Name>clambc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamconf\clamconf.vcxproj">
+      <Project>{C790BE2B-E6A8-344E-B42C-DB454347CD86}</Project>
+      <Name>clamconf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamd\clamd.vcxproj">
+      <Project>{AB35AD90-ABCF-3510-939C-959DEA37ACFB}</Project>
+      <Name>clamd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamdscan\clamdscan.vcxproj">
+      <Project>{D1566AEE-1C5C-3E87-827E-76FAF482766D}</Project>
+      <Name>clamdscan</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamdtop\clamdtop.vcxproj">
+      <Project>{8F2B258C-DB10-31FD-8514-A0ABACF85868}</Project>
+      <Name>clamdtop</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclammspack\clammspack.vcxproj">
+      <Project>{B67B063A-A32C-35EC-AC6A-CB9D3D58065D}</Project>
+      <Name>clammspack</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamscan\clamscan.vcxproj">
+      <Project>{27E12440-7B77-3B52-B787-C85BCCF5EFE3}</Project>
+      <Name>clamscan</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\clamsubmit\clamsubmit.vcxproj">
+      <Project>{EFED844A-D273-31D3-A9FE-2B749E1F4D02}</Project>
+      <Name>clamsubmit</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamunrar\clamunrar.vcxproj">
+      <Project>{C83D8B6B-C908-3576-A090-A66962DE3A87}</Project>
+      <Name>clamunrar</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamunrar_iface\clamunrar_iface.vcxproj">
+      <Project>{212FD853-83B6-3CB2-932B-1B63AD28D09E}</Project>
+      <Name>clamunrar_iface</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\common\common.vcxproj">
+      <Project>{0FB0D069-CA59-3167-91DF-4F3DB80CD961}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\examples\ex1.vcxproj">
+      <Project>{121AF01F-E3A5-3958-A1F4-33742ED2C2E8}</Project>
+      <Name>ex1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libfreshclam\freshclam.vcxproj">
+      <Project>{291A457E-2D07-378F-B7F0-1E1483023D4B}</Project>
+      <Name>freshclam</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\freshclam\freshclam-bin.vcxproj">
+      <Project>{0A3EFBC1-C4C6-3DE3-A59D-65C856149A65}</Project>
+      <Name>freshclam-bin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\lzma_sdk.vcxproj">
+      <Project>{E168AEDC-2C46-354F-BAD4-052DC5CDF6BC}</Project>
+      <Name>lzma_sdk</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\regex.vcxproj">
+      <Project>{4A243B09-C311-3B03-95E3-8AAE8FF23EB5}</Project>
+      <Name>regex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\sigtool\sigtool.vcxproj">
+      <Project>{08DC1F5D-6C13-3E30-87E7-DDD2D442C041}</Project>
+      <Name>sigtool</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\test_install.vcxproj">
+      <Project>{EAA6CE23-E1CA-3154-81E4-B2CE61E0F4EB}</Project>
+      <Name>test_install</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-aspack.exe.vcxproj">
+      <Project>{024624F8-4BFA-30A9-87AD-49C54DB069EE}</Project>
+      <Name>tgt_clam-aspack.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-fsg.exe.vcxproj">
+      <Project>{6199ECA2-B870-3878-AEFA-74D2FCA65DD6}</Project>
+      <Name>tgt_clam-fsg.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-mew.exe.vcxproj">
+      <Project>{7E3AE992-0084-336A-A950-DCFCD493488A}</Project>
+      <Name>tgt_clam-mew.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-nsis.exe.vcxproj">
+      <Project>{BB695C1E-4930-32B0-9EC5-C96C574AF0A5}</Project>
+      <Name>tgt_clam-nsis.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-pespin.exe.vcxproj">
+      <Project>{3493BDC9-FBE2-32B1-8C7B-15759C2EA775}</Project>
+      <Name>tgt_clam-pespin.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-petite.exe.vcxproj">
+      <Project>{8A837407-D22C-3466-BF02-03791978754E}</Project>
+      <Name>tgt_clam-petite.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-upack.exe.vcxproj">
+      <Project>{E884E140-87E9-3D8F-8E42-5FE4CB418722}</Project>
+      <Name>tgt_clam-upack.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-upx.exe.vcxproj">
+      <Project>{D3EA61CC-A19D-3E5E-A625-C78876B0FD82}</Project>
+      <Name>tgt_clam-upx.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-v2.rar.vcxproj">
+      <Project>{E260B469-ACB8-37AF-8D4E-9A6E530BFFFD}</Project>
+      <Name>tgt_clam-v2.rar</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-v3.rar.vcxproj">
+      <Project>{2E669577-BF75-35FD-BE2F-B693198AB72F}</Project>
+      <Name>tgt_clam-v3.rar</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-wwpack.exe.vcxproj">
+      <Project>{74D3D54D-64FD-3108-B64F-5FE400824140}</Project>
+      <Name>tgt_clam-wwpack.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam-yc.exe.vcxproj">
+      <Project>{AC5DE561-2D71-3704-8F7B-6C7C711C56AB}</Project>
+      <Name>tgt_clam-yc.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.7z.vcxproj">
+      <Project>{9F04624C-B1CA-3CC4-9654-AE50C25E0F9F}</Project>
+      <Name>tgt_clam.7z</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.arj.vcxproj">
+      <Project>{9CD05B49-662F-3FEE-86E8-735DF3F29409}</Project>
+      <Name>tgt_clam.arj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.bin-be.cpio.vcxproj">
+      <Project>{53E4A732-F128-34F1-A5FD-378ED114B865}</Project>
+      <Name>tgt_clam.bin-be.cpio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.bin-le.cpio.vcxproj">
+      <Project>{502E484C-E7DF-3BE2-AD98-CC0733CA654A}</Project>
+      <Name>tgt_clam.bin-le.cpio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.bz2.zip.vcxproj">
+      <Project>{12A491F1-C657-3A64-B1DA-3684D8738E9B}</Project>
+      <Name>tgt_clam.bz2.zip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.cab.vcxproj">
+      <Project>{89B10AFF-91FA-3C9C-877F-A956AAF3BEF8}</Project>
+      <Name>tgt_clam.cab</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.chm.vcxproj">
+      <Project>{A4BD395A-8C49-3E0A-A7B3-8B3A39D7B983}</Project>
+      <Name>tgt_clam.chm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.d64.zip.vcxproj">
+      <Project>{741CD7B8-936F-3518-BEBC-6997D314DBBB}</Project>
+      <Name>tgt_clam.d64.zip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.ea05.exe.vcxproj">
+      <Project>{FF0FDFE9-F85A-37A7-87C8-1BF169158685}</Project>
+      <Name>tgt_clam.ea05.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.ea06.exe.vcxproj">
+      <Project>{7C3A9240-65F4-3C80-A9DB-B2D5B825795A}</Project>
+      <Name>tgt_clam.ea06.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe.vcxproj">
+      <Project>{D9EE5329-6338-3CF7-A3F1-4D4609816325}</Project>
+      <Name>tgt_clam.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe.binhex.vcxproj">
+      <Project>{38CFE90D-8799-321C-A51D-183831678838}</Project>
+      <Name>tgt_clam.exe.binhex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe.bz2.vcxproj">
+      <Project>{852401F2-4FEE-36E5-8853-C8B3B71731B8}</Project>
+      <Name>tgt_clam.exe.bz2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe.html.vcxproj">
+      <Project>{7A6EE930-7C01-37FD-B1A4-3F9650AE8F47}</Project>
+      <Name>tgt_clam.exe.html</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe.mbox.base64.vcxproj">
+      <Project>{D3FA30D1-E315-3BEC-B23B-E5318129EEB3}</Project>
+      <Name>tgt_clam.exe.mbox.base64</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe.mbox.uu.vcxproj">
+      <Project>{66A6C973-C877-3247-AA3F-825188E24D40}</Project>
+      <Name>tgt_clam.exe.mbox.uu</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe.rtf.vcxproj">
+      <Project>{6DBF90AC-0525-3DEF-B2AA-68AFF01143A8}</Project>
+      <Name>tgt_clam.exe.rtf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe.szdd.vcxproj">
+      <Project>{F5AD8FE3-6F10-3BF1-83F2-DA3FC74A1997}</Project>
+      <Name>tgt_clam.exe.szdd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.exe_and_mail.tar.gz.vcxproj">
+      <Project>{B713D26F-D21C-34B1-AB14-4882E53F837F}</Project>
+      <Name>tgt_clam.exe_and_mail.tar.gz</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.impl.zip.vcxproj">
+      <Project>{13552478-CF61-3BCD-A758-F0AB1E52EAFC}</Project>
+      <Name>tgt_clam.impl.zip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.iso.vcxproj">
+      <Project>{3236610E-9639-3BCE-89B3-F4E76AF1EFA7}</Project>
+      <Name>tgt_clam.iso</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.mail.vcxproj">
+      <Project>{02D01BFC-637D-3366-863D-2F91293D1B22}</Project>
+      <Name>tgt_clam.mail</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.newc.cpio.vcxproj">
+      <Project>{E89F763C-46A7-3014-AC5A-4D55FD550E8E}</Project>
+      <Name>tgt_clam.newc.cpio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.odc.cpio.vcxproj">
+      <Project>{339FF3AB-040F-327D-8DA3-C02B290A5BEC}</Project>
+      <Name>tgt_clam.odc.cpio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.ole.doc.vcxproj">
+      <Project>{65A0AA0D-0430-3F90-8464-6B1480EE777A}</Project>
+      <Name>tgt_clam.ole.doc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.pdf.vcxproj">
+      <Project>{E8A37C35-0B32-3C21-BB30-601DE2EC9219}</Project>
+      <Name>tgt_clam.pdf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.ppt.vcxproj">
+      <Project>{7506B8DE-7914-394F-A914-A9803ABFAD27}</Project>
+      <Name>tgt_clam.ppt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.sis.vcxproj">
+      <Project>{A0DF7E78-6092-3963-AE55-4B73DF427D28}</Project>
+      <Name>tgt_clam.sis</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.tar.gz.vcxproj">
+      <Project>{3161EDC1-DCDF-366A-A6F1-0D8108E97A30}</Project>
+      <Name>tgt_clam.tar.gz</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.tnef.vcxproj">
+      <Project>{088B1963-F480-322F-9820-8A494C0D72F6}</Project>
+      <Name>tgt_clam.tnef</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam.zip.vcxproj">
+      <Project>{E5335E6D-6B87-3886-8FAB-C1183BA2D0BB}</Project>
+      <Name>tgt_clam.zip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam_IScab_ext.exe.vcxproj">
+      <Project>{D2FA1B58-C79E-30CF-AF7E-CA40E0DF8270}</Project>
+      <Name>tgt_clam_IScab_ext.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam_IScab_int.exe.vcxproj">
+      <Project>{7BA33674-1626-37A2-81F6-230BC7304B99}</Project>
+      <Name>tgt_clam_IScab_int.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam_ISmsi_ext.exe.vcxproj">
+      <Project>{4EE9344F-A0D0-3E40-9600-881E9E073F4F}</Project>
+      <Name>tgt_clam_ISmsi_ext.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam_ISmsi_int.exe.vcxproj">
+      <Project>{74A00DAC-F662-3757-9440-3BB678108453}</Project>
+      <Name>tgt_clam_ISmsi_int.exe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clam_cache_emax.tgz.vcxproj">
+      <Project>{D8D62DB4-79D0-3DEC-9CAB-7C66C6EF080E}</Project>
+      <Name>tgt_clam_cache_emax.tgz</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\unit_tests\input\tgt_clamjol.iso.vcxproj">
+      <Project>{1716693B-B2F0-317E-8B55-DB52AFE424A4}</Project>
+      <Name>tgt_clamjol.iso</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.vcxproj">
+      <Project>{1F950838-261C-317C-9DF7-754BDD6356AA}</Project>
+      <Name>tomsfastmath</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\win32\compat\win32_compat.vcxproj">
+      <Project>{687487EB-1FCC-351E-89D1-7ECCC28DFE93}</Project>
+      <Name>win32_compat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\win32\compat\win32_compat_obj.vcxproj">
+      <Project>{50AE331D-C34E-3E5A-95EF-0454C6C574E6}</Project>
+      <Name>win32_compat_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\KETQIK\clamav-0.104.2\build\libclamav\yara.vcxproj">
+      <Project>{FE75F373-96DA-3A79-830C-0423F53C6268}</Project>
+      <Name>yara</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1 @@
+D:\KETQIK\clamav-0.104.2\build\libclamav\tomsfastmath.dir\RelWithDebInfo\tomsfastmath.lib

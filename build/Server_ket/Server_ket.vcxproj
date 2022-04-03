@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{BA69F04E-EE31-4D8A-B167-08D8804560AC}</ProjectGuid>
+    <RootNamespace>scanqik</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\install/</OutDir>
+    <IntDir>.\x64\Debug/</IntDir>
+    <TargetName>scanqik</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\install/</OutDir>
+    <IntDir>.\x64\Release/</IntDir>
+    <TargetName>Boost_server</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAVE_CONFIG_H;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2\libfreshclam;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\common;D:\KETQIK\clamav-0.104.2\freshclam;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D:\KETQIK\clamav-0.104.2\build\libclamav\RelWithDebInfo\clamav.lib;D:\KETQIK\clamav-0.104.2\build\libclammspack\RelWithDebInfo\clammspack.lib;D:\KETQIK\clamav-0.104.2\build\libfreshclam\RelWithDebInfo\freshclam.lib;D:\KETQIK\clamav-0.104.2\build\common\RelWithDebInfo\libcommon.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libssl.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libcrypto.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libcurl-d.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\zlibd.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\bz2d.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\pcre2-8d.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libxml2.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\json-c.lib;D:\KETQIK\clamav-0.104.2\build\win32\compat\RelWithDebInfo\libwin32_compat.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\pthreadVC3d.lib;dnsapi.lib;wsock32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";NDEBUG;_CONSOLE</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Boost_New\boost_1_78_0\boost\math\tools;D:\Boost_New\boost_1_78_0\boost\beast\core;D:\Boost_New\boost_1_78_0\boost\beast\websocket;D:\Boost_New\boost_1_78_0\boost\beast\http;D:\Boost_New\boost_1_78_0\boost\asio;D:\Boost_New\boost_1_78_0\boost\asio\ip;D:\KETQIK\clamav-0.104.2\build\scanqik;D:\KETQIK\clamav-0.104.2\build\scanqik\include;D:\Boost_New\boost_1_78_0;D:\Service_qik;D:\KETQIK\clamav-0.104.2\freshclam;D:\KETQIK\clamav-0.104.2\win32\compat;D:\KETQIK\clamav-0.104.2\libfreshclam;D:\KETQIK\clamav-0.104.2\common;D:\KETQIK\clamav-0.104.2\libclamav;D:\KETQIK\clamav-0.104.2\build;D:\KETQIK\clamav-0.104.2\build\libclamav;D:\KETQIK\clamav-0.104.2\libclammspack\mspack;D:\KETQIK\clamav-0.104.2\libclamunrar_iface;C:\dev\vcpkg\installed\x64-windows\include;C:\dev\vcpkg\installed\x64-windows\include\libxml2;C:\dev\vcpkg\installed\x64-windows\include\json-c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>D:\Boost_New\boost_1_78_0\stage\lib\libboost_json-vc143-mt-x64-1_78.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\um\x86\WS2_32.Lib;D:\KETQIK\clamav-0.104.2\build\libfreshclam\RelWithDebInfo\freshclam.lib;D:\KETQIK\clamav-0.104.2\build\common\RelWithDebInfo\libcommon.lib;D:\KETQIK\clamav-0.104.2\build\libclamav\RelWithDebInfo\clamav.lib;D:\KETQIK\clamav-0.104.2\build\libclammspack\RelWithDebInfo\clammspack.lib;C:\dev\vcpkg\installed\x64-windows\lib\bz2.lib;C:\dev\vcpkg\installed\x64-windows\lib\pcre2-8.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\libxml2.lib;C:\dev\vcpkg\installed\x64-windows\debug\lib\json-c.lib;D:\KETQIK\clamav-0.104.2\build\win32\compat\RelWithDebInfo\libwin32_compat.lib;C:\dev\vcpkg\installed\x64-windows\lib\pthreadVC3.lib;dnsapi.lib;wsock32.lib;C:\dev\vcpkg\installed\x64-windows\lib\libcurl.lib;C:\dev\vcpkg\installed\x64-windows\lib\zlib.lib;winmm.lib;ws2_32.lib;advapi32.lib;crypt32.lib;C:\dev\vcpkg\installed\x64-windows\lib\libssl.lib;C:\dev\vcpkg\installed\x64-windows\lib\libcrypto.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Boost_New\boost_1_78_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Boost_New\boost_1_78_0\libs\beast\test\beast\core\tcp_stream.cpp" />
+    <ClCompile Include="..\..\freshclam\execute.c" />
+    <ClCompile Include="..\..\freshclam\notify.c" />
+    <ClCompile Include="dist\jsoncpp.cpp" />
+    <ClCompile Include="qik_server.cpp" />
+    <ClCompile Include="scanqik.c" />
+    <ClCompile Include="Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\optparser.h" />
+    <ClInclude Include="..\..\common\output.h" />
+    <ClInclude Include="..\..\freshclam\execute.h" />
+    <ClInclude Include="..\..\libclamav\clamav.h" />
+    <ClInclude Include="..\..\libclamav\others.h" />
+    <ClInclude Include="cheader.h" />
+    <ClInclude Include="dist\json\json-forwards.h" />
+    <ClInclude Include="dist\json\json.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="Serv_Header.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
